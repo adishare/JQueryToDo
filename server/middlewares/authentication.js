@@ -38,7 +38,7 @@ module.exports = {
 
 		} catch (err) {
 			res.status(400).json({
-				message: "Invalid Signature"
+				message: "Invalid Creditial"
 			});
 		}
     },
@@ -58,9 +58,7 @@ module.exports = {
             }
         })
         .catch(err => {
-            res.status(400).json({
-                message: err
-            });
+            res.status(400).json(err)
         });
     },
 
@@ -80,14 +78,12 @@ module.exports = {
                 
             } else {
                 res.status(204).json({
-                    message: "NK"
+                    message: "Not Found"
                 });
             }
         })
         .catch(err => {
-            res.status(400).json({
-                message: err
-            });
+            res.status(400).json(err);
         });
 	}
 

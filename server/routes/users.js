@@ -8,9 +8,9 @@ router
 .post("/verifytoken", userController.verifyToken)
 
 router
-.get('/', userController.getOneById) //user dashboard
-.delete('/', userController.deleteById) //delete user's own account
-.patch('/', userController.updatebyId); //update changes
+.get('/', userController.getOneById) 
+.delete('/', userController.deleteById) 
+.patch('/', userController.updatebyId); 
 
 
 module.exports = router;

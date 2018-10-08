@@ -42,7 +42,7 @@ module.exports = {
                 });
             } else {
                 res.status(204).json({
-                    message: "NK"
+                    message: "Not Found"
                 });
             }
         })
